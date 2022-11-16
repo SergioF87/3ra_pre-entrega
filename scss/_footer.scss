@@ -1,0 +1,16 @@
+/* FOOTER */ 
+
+footer {
+    background: $color-fondo2;
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        img {
+            height: 30px;
+            margin: 15px;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+/* GENERAL */
+body {
+  background-color: #171A21;
+  margin: 0;
+}
+body li {
+  list-style-type: none;
+  display: inline;
+}
+body main {
+  width: 80%;
+  margin: auto;
+}
+body main h3 {
+  color: #AFB3F7;
+  font-size: 50px;
+  font-weight: 500;
+  border-bottom: 2px solid #7A93AC;
+}
+body main h4 {
+  color: #BCC0F8;
+  font-size: 35px;
+  font-weight: 400;
+}
+body main p {
+  color: #E8E9FA;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* HEADER */
+.encabezado, .encabezado2 {
+  width: 100%;
+  color: #171A21;
+  background: linear-gradient(#617073, #AFB3F7);
+  display: grid;
+  grid-template-areas: "logo logo nombre nombre" "logo logo navegador navegador";
+}
+.encabezado .textoEncabezado, .encabezado2 .textoEncabezado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  grid-area: nombre;
+}
+.encabezado .textoEncabezado h1, .encabezado2 .textoEncabezado h1 {
+  font-size: 5rem;
+  margin-top: 10px;
+  display: inline-block;
+}
+.encabezado .textoEncabezado h2, .encabezado2 .textoEncabezado h2 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.encabezado .navegador, .encabezado2 .navegador {
+  display: flex;
+  justify-content: center;
+  grid-area: navegador;
+}
+.encabezado .navegador a, .encabezado2 .navegador a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+  transition: all 0.3s ease;
+}
+.encabezado .navegador a:hover, .encabezado2 .navegador a:hover {
+  color: #617073;
+  font-size: 1.55rem;
+}
+.encabezado .logo, .encabezado2 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: logo;
+}
+.encabezado .logo img, .encabezado2 .logo img {
+  height: 300px;
+}
+
+@media (max-width: 1200px) {
+  .encabezado .textoEncabezado h1, .encabezado2 .textoEncabezado h1 {
+    font-size: 4.5rem;
+  }
+  .encabezado .textoEncabezado h2, .encabezado2 .textoEncabezado h2 {
+    font-size: 2.5rem;
+  }
+  .encabezado .navegador a, .encabezado2 .navegador a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 770px) {
+  .encabezado, .encabezado2 {
+    grid-template-areas: "logo" "nombre" "navegador";
+  }
+  .encabezado .textoEncabezado h1, .encabezado2 .textoEncabezado h1 {
+    font-size: 4rem;
+  }
+  .encabezado .textoEncabezado h2, .encabezado2 .textoEncabezado h2 {
+    font-size: 2rem;
+  }
+  .encabezado2 {
+    grid-template-areas: "logo" "navegador";
+  }
+  .encabezado2 .textoEncabezado {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .encabezado .textoEncabezado h1, .encabezado2 .textoEncabezado h1 {
+    font-size: 3rem;
+  }
+  .encabezado .textoEncabezado h2, .encabezado2 .textoEncabezado h2 {
+    font-size: 1.5rem;
+  }
+  .encabezado .logo img, .encabezado2 .logo img {
+    height: 200px;
+  }
+}
+/* FOOTER */
+footer {
+  background: linear-gradient(#617073, #AFB3F7);
+}
+footer .redes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+footer .redes img {
+  height: 30px;
+  margin: 15px;
+}
+
+/* MAIN INDEX */ /* MAIN NUESTRA HISTORIA */ /* MAIN SER ALUMNO */ /* MAIN MULTIMEDIA */ /* MAIN CONTACTO */
+
+/*# sourceMappingURL=style.css.map */
