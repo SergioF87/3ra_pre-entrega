@@ -18,3 +18,19 @@ $tam-h2: 3rem;
 $tam-h3: 50px;
 $tam-h4: 35px;
 $tam-a: 1.5rem;
+
+// NOVEDADES - INDEX
+
+@mixin estiloNov {
+    border: $color-auxiliar 2px solid;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+// IMAGENES - HISTORIA
+
+@mixin estiloImg {
+    display: block;
+    width: 35%;
+    margin: 0 10px 0 10px;
+}

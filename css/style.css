@@ -134,6 +134,109 @@ footer .redes img {
   margin: 15px;
 }
 
-/* MAIN INDEX */ /* MAIN NUESTRA HISTORIA */ /* MAIN SER ALUMNO */ /* MAIN MULTIMEDIA */ /* MAIN CONTACTO */
+/* MAIN INDEX */
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.index .carousel {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.index .novedades {
+  margin: 5px 10% 10px 10%;
+  display: grid;
+  grid-template-areas: "titnov" "nove1" "nove2";
+}
+.index .novedades .nove1 {
+  grid-area: nove1;
+  border: #7A93AC 2px solid;
+  border-radius: 6px;
+  padding: 10px;
+}
+.index .novedades .nove2 {
+  grid-area: nove2;
+  border: #7A93AC 2px solid;
+  border-radius: 6px;
+  padding: 10px;
+}
+.index .novedades h3 {
+  grid-area: titnov;
+}
+@media (min-width: 768px) {
+  .index .novedades {
+    grid-template-areas: "titnov titnov" "nove1 nove2";
+    column-gap: 10px;
+  }
+}
+
+/* MAIN NUESTRA HISTORIA */
+.historia {
+  display: grid;
+  grid-template-areas: "tithis" "secUno" "secDos";
+  margin: 10px 10% 15px 10%;
+}
+.historia .tithis {
+  grid-area: tithis;
+}
+.historia .secUno {
+  grid-area: secUno;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.historia .secUno .primera p {
+  grid-area: primera;
+}
+.historia .secUno .imagenUno {
+  display: block;
+  width: 35%;
+  margin: 0 10px 0 10px;
+  grid-area: imgUno;
+}
+.historia .secDos {
+  grid-area: secDos;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.historia .secDos .segunda p {
+  text-align: right;
+  grid-area: segunda;
+}
+.historia .secDos .imagenDos {
+  display: block;
+  width: 35%;
+  margin: 0 10px 0 10px;
+  grid-area: imgDos;
+}
+
+@media (max-width: 1100px) {
+  .historia .secUno {
+    flex-direction: column;
+  }
+  .historia .secUno .imagenUno {
+    width: 80%;
+    margin: auto;
+  }
+  .historia .secDos {
+    flex-direction: column;
+  }
+  .historia .secDos .imagenDos {
+    display: none;
+  }
+  .historia .secDos .segunda p {
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .historia .secUno .imagenUno {
+    display: none;
+  }
+}
+/* MAIN SER ALUMNO */ /* MAIN MULTIMEDIA */ /* MAIN CONTACTO */
 
 /*# sourceMappingURL=style.css.map */
