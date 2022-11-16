@@ -275,7 +275,8 @@ footer .redes img {
     display: none;
   }
   .alumno .niveles:hover {
-    transform: scaley(3);
+    transform: scaley(2);
+    background-color: #171A21;
     flex-direction: column;
   }
   .alumno .niveles:hover p {

@@ -36,7 +36,8 @@
             }
             transition: all 0.3s ease;
             &:hover {
-                transform: scaley(3);
+                transform: scaley(2);
+                background-color: $color-fondo1;
                 p {
                     display: block;
                 }
