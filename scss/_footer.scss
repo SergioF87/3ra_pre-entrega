@@ -9,8 +9,7 @@ footer {
         align-items: flex-end;
 
         img {
-            height: 30px;
-            margin: 15px;
+            @include estiloIcono
         }
     }
 }

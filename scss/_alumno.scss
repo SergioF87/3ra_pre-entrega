@@ -38,6 +38,7 @@
             &:hover {
                 transform: scaley(2);
                 background-color: $color-fondo1;
+                z-index: 2;
                 p {
                     display: block;
                 }

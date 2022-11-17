@@ -34,3 +34,10 @@ $tam-a: 1.5rem;
     height: 20rem;
     margin: 0 10px 0 10px;
 }
+
+// ICONOS
+
+@mixin estiloIcono {
+    height: 30px;
+    margin: 15px;
+}

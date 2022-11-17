@@ -277,6 +277,7 @@ footer .redes img {
   .alumno .niveles:hover {
     transform: scaley(2);
     background-color: #171A21;
+    z-index: 2;
     flex-direction: column;
   }
   .alumno .niveles:hover p {
@@ -284,6 +285,120 @@ footer .redes img {
   }
 }
 
-/* MAIN MULTIMEDIA */ /* MAIN CONTACTO */
+/* MAIN MULTIMEDIA */
+.multimedia {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10% 15px 10%;
+}
+.multimedia .fotos {
+  justify-content: center;
+}
+.multimedia .fotos img {
+  border-radius: 1rem;
+  padding: 0.4rem;
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+  filter: grayscale(50%);
+}
+.multimedia .fotos img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.multimedia .videos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.multimedia .videos iframe {
+  height: auto;
+  margin: 0.2rem;
+}
+
+/* MAIN CONTACTO */
+.contacto {
+  display: grid;
+  grid-template-areas: "mapa mapa" "contacto formulario";
+  margin: 10px 10% 15px 10%;
+}
+.contacto .mapa {
+  grid-area: mapa;
+}
+.contacto .mapa iframe {
+  width: 95%;
+}
+.contacto .directo {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+}
+.contacto .directo img {
+  height: 30px;
+  margin: 15px;
+}
+.contacto .directo span {
+  font-size: 25px;
+  color: #E8E9FA;
+  font-family: "Merriweather", serif;
+}
+@media (max-width: 799px) {
+  .contacto .directo span {
+    font-size: 13px;
+  }
+}
+.contacto .formulario {
+  grid-area: formulario;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto .formulario .tablero {
+  width: 70%;
+  background-color: #E8E9FA;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  border: 1.5px solid #7A93AC;
+  font-family: "Merriweather", serif;
+  font-size: 0.8rem;
+}
+.contacto .formulario .tab1:focus {
+  height: 60px;
+}
+.contacto .formulario div {
+  display: flex;
+}
+.contacto .formulario div .botones {
+  width: 7rem;
+  height: 40px;
+  margin: 10px;
+  border-radius: 4px;
+  border: none;
+  color: #171A21;
+  background: linear-gradient(#617073, #AFB3F7);
+  font-size: 20px;
+  font-weight: 500;
+}
+.contacto .formulario div .botones:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.contacto .formulario div .botones:active {
+  transform: translateY(3px);
+}
+
+@media (max-width: 1023px) {
+  .contacto {
+    grid-template-areas: "mapa" "contacto" "formulario";
+  }
+  .contacto h4 {
+    font-size: 25px;
+  }
+  .contacto iframe {
+    height: 70%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
